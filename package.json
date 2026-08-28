@@ -1,0 +1,15 @@
+{
+  "name": "playwright-ecommerce-framework",
+  "version": "1.0.0",
+  "description": "End-to-end automation framework built with Playwright and JavaScript.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": ["playwright","automation","e2e", "javascript"],
+  "author": "Ana",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.0",
+    "@types/node": "^26.1.2"
+  }
+}
