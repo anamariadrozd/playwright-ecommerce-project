@@ -1,7 +1,7 @@
 {
-  "name": "playwright-ecommerce-framework",
+  "name": "playwright-ecommerce-project",
   "version": "1.0.0",
-  "description": "End-to-end automation framework built with Playwright and JavaScript.",
+  "description": "End-to-end automation project built with Playwright and JavaScript.",
   "main": "index.js",
   "scripts": {},
   "keywords": ["playwright","automation","e2e", "javascript"],
