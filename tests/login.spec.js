@@ -18,7 +18,7 @@ test("@regression Locked out user cannot log in", async ({ page, loginPage }) =>
     await expect(page.getByText("Epic sadface: Sorry, this user has been locked out")).toBeVisible();
 });
 
-test("regression User cannot log in with an invalid password", async ({ page, loginPage }) => {
+test("@regression User cannot log in with an invalid password", async ({ page, loginPage }) => {
     await loginPage.login(users.standardUser.username, users.invalidCredentials.password);
     await expect(page).toHaveURL("/");
     await expect(page.getByText("Epic sadface: Username and password do not match any user in this service")).toBeVisible();
