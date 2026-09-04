@@ -12,7 +12,7 @@ export class CartPage {
         await this.continueShoppingButton.click();
     }
     async remove() {
-        await this.removeButton.click();
+        await this.removeButton.first().click();
     }
 
 
