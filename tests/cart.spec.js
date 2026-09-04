@@ -20,6 +20,16 @@ test("@smoke @regression User can remove a product from the shopping cart", asyn
     await expect(page.getByText("Sauce Labs Backpack")).toHaveCount(0);
 });
 
+test("User can remove multiple products from the shopping cart", async ({ page, inventoryPage, cartPage }) => {
+    await inventoryPage.addBackpackToCart();
+    await inventoryPage.addBikelightToCart();
+    await inventoryPage.openShoppingCart();
+    await cartPage.remove();
+    await cartPage.remove();
+    await expect(page.getByText("Sauce Labs Backpack")).toHaveCount(0);
+    await expect(page.getByText("Sauce Labs Bike Light")).toHaveCount(0);
+});
+
 test("User can continue shopping", async ({ page, inventoryPage, cartPage }) => {
     await inventoryPage.openShoppingCart();
     await cartPage.continueShopping()
